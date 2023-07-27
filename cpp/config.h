@@ -1,0 +1,15 @@
+//
+// Created by th on 2023/7/27.
+//
+
+#ifndef LEARN_OPENCV_CONFIG_H
+#define LEARN_OPENCV_CONFIG_H
+/*
+VGA=640*480;
+HD=1280*720;
+FHD=1920*1080;
+4K=3840*2160;
+*/
+
+
+#endif //LEARN_OPENCV_CONFIG_H
