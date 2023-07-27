@@ -8,6 +8,21 @@
  * read images videos and webcams
  */
 
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
+#include <iostream>
+
+
+using namespace cv;
+using namespace std;
+
+Mat read_image(string path){
+    Mat img = imread(path);
+    return img;
+}
+
+
 
 
 
