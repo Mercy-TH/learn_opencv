@@ -5,7 +5,7 @@
 
 
 int main(){
-//    test_opencv();
+    test_opencv();
     return 0;
 }
 
