@@ -5,24 +5,52 @@
 #include "include/chapter2.hpp"
 #include "include/chapter3.hpp"
 #include "include/chapter4.hpp"
+#include "include/chapter5.hpp"
+#include "include/chapter6.hpp"
+#include "include/chapter7.hpp"
 
 int main(){
-    string img_path = "../dog.jpg";
+    string dog_img_path = "../dog.jpg";
+    string card_img_path = "../card.jpg";
+    string shapes_img_path = "../shapes.jpg";
     string video_path = "../soccer.mp4";
-//    read_image(img_path);
+//    read_image(dog_img_path);
 //    read_video(video_path);
 
-//    rgb2gray(img_path);
-//    gaussianBlur(img_path);
-//    canny(img_path);
-//    dilate(img_path);
-//    erode(img_path);
+//    rgb2gray(dog_img_path);
+//    gaussianBlur(dog_img_path);
+//    canny(dog_img_path);
+//    dilate(dog_img_path);
+//    erode(dog_img_path);
 
-//    resize(img_path);
-//    crop(img_path);
+//    resize(dog_img_path);
+//    crop(dog_img_path);
 
 //    draw();
-    draw_circle();
+//    draw_circle();
+//    draw_rectangle();
+//    draw_line();
+//    draw_text();
+
+//    wrap_image(card_img_path);
+
+//    detect_color(shapes_img_path);
+
+    detect_shape(shapes_img_path);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     return 0;
 }
