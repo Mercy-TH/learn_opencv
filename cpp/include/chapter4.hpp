@@ -43,5 +43,41 @@ void draw_circle(){
     destroyAllWindows();
 }
 
+/*
+ * 画矩形
+ */
+void draw_rectangle(){
+    Mat img(512,512,CV_8UC3, Scalar(255,255,255));
+    //Point(200,256),Point(328,300)分别表示矩形左上角和右下角坐标
+    // 3表示圆的厚度，若填FILLED则把圆填充满
+    rectangle(img, Point(200,256),Point(328,300), Scalar(0,255,0), 3);
+    imshow("img", img);
+    waitKey();
+    destroyAllWindows();
+}
+
+/*
+ * 画线
+ */
+void draw_line(){
+    Mat img(512,512,CV_8UC3, Scalar(255,255,255));
+    line(img, Point(200,216),Point(328,400), Scalar(0,0,255),10);
+    imshow("img", img);
+    waitKey();
+    destroyAllWindows();
+}
+
+/*
+ * 画文本
+ */
+void draw_text(){
+    Mat img(512,512,CV_8UC3, Scalar(255,255,255));
+    putText(img, "text demo",Point(100,116), FONT_HERSHEY_DUPLEX,0.75,Scalar(0,0,255),2);
+    imshow("img", img);
+    waitKey();
+    destroyAllWindows();
+}
+
+
 
 #endif //LEARN_OPENCV_CHAPTER4_H

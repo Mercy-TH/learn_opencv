@@ -46,8 +46,7 @@ void gaussianBlur(const string &path) {
  */
 void canny(const string &path){
     Mat img = imread(path);
-    Mat img_canny;
-    Mat img_blur;
+    Mat img_canny, img_blur;
     GaussianBlur(img, img_blur, Size(7, 7), 5, 0);
     Canny(img_blur, img_canny,25,75);
     imshow("img_canny", img_canny);
