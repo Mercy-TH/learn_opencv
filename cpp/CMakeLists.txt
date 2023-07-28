@@ -6,9 +6,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_BUILD_TYPE Debug)
 
 
-if(CMAKE_HOST_SYSTEM_NAME MATCHES "Linux")
+if(UNIX)
     message("current platform: Linux ")
-elseif(CMAKE_HOST_SYSTEM_NAME MATCHES "Windows")
+elseif(WIN32)
     message("current platform: Windows ")
     set(OpenCV_DIR "D:\\opencv\\mingw_build\\install")
 else()
