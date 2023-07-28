@@ -24,7 +24,7 @@ using namespace std;
  */
 Mat read_image(const string& path) {
     Mat img = imread(path);
-    imshow("dog", img);
+    imshow("img", img);
     waitKey();
     destroyAllWindows();
     return img;
